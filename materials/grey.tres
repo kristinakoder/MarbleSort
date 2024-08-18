@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://c80yp13p1bhbq"]
+
+[ext_resource type="Texture2D" uid="uid://dhvrgolg85o5q" path="res://textures/Concrete021_1K-PNG/Concrete021_1K-PNG_Color.png" id="1_j0ljm"]
+[ext_resource type="Texture2D" uid="uid://dd4u3unjy18ve" path="res://textures/Concrete021_1K-PNG/Concrete021_1K-PNG_Roughness.png" id="2_phynx"]
+
+[resource]
+albedo_color = Color(0.568973, 0.568973, 0.568973, 1)
+albedo_texture = ExtResource("1_j0ljm")
+roughness_texture = ExtResource("2_phynx")
