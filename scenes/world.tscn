@@ -59,4 +59,4 @@ script = ExtResource("3_6v7nn")
 [node name="tub0" parent="." instance=ExtResource("2_umqp4")]
 
 [node name="marble0" parent="." instance=ExtResource("7_oxepk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.12885, 6.23188, 3.67948)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.12885, 7.46193, 3.67948)

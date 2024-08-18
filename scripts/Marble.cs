@@ -3,15 +3,12 @@ using System;
 
 public partial class Marble : RigidBody3D
 {
-	//color id?
+	//color? Then group by color
 
-
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
 	}
@@ -20,7 +17,9 @@ public partial class Marble : RigidBody3D
 	public void MoveMarble()
 	{
 		GD.Print("Marble clicked");
-		Vector2 mousePosition = GetViewport().GetMousePosition(); //men må oppdateres kontinuerlig.
+		Vector2 mousePosition = GetViewport().GetMousePosition(); //needs to update continuously, so in process?
 		GD.Print(mousePosition);
+		GD.Print(Position);
+		Position = new Vector3(mousePosition.X, 10f, mousePosition.Y); //need to change from mousePosition to world position
 	}
 }
