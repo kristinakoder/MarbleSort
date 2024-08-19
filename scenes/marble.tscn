@@ -9,6 +9,7 @@
 material = ExtResource("1_rkcdv")
 
 [node name="Marble" type="RigidBody3D"]
+gravity_scale = 6.0
 script = ExtResource("1_xiwjw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

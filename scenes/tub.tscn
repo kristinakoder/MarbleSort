@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://0pmnfywxhe02"]
+[gd_scene load_steps=9 format=3 uid="uid://0pmnfywxhe02"]
 
 [ext_resource type="Script" path="res://scripts/TubScript.cs" id="1_0d5bb"]
-[ext_resource type="Material" uid="uid://c80yp13p1bhbq" path="res://materials/grey.tres" id="1_x67ih"]
-[ext_resource type="Material" uid="uid://c08iybhn3r18n" path="res://materials/mat0.tres" id="3_pyg86"]
+[ext_resource type="Material" uid="uid://mcpxksakf3s1" path="res://materials/tubMaterial.tres" id="2_qx64l"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_i1324"]
-material = ExtResource("1_x67ih")
+material = ExtResource("2_qx64l")
 left_to_right = 0.0
 size = Vector3(2, 5, 8)
 
@@ -16,7 +15,7 @@ size = Vector3(0.01, 5.355, 8)
 size = Vector3(0.01, 5, 8)
 
 [sub_resource type="BoxMesh" id="BoxMesh_i3ntc"]
-material = ExtResource("3_pyg86")
+material = ExtResource("2_qx64l")
 size = Vector3(8, 0.1, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ojsrk"]

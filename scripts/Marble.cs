@@ -10,10 +10,8 @@ public partial class Marble : RigidBody3D
     }
 
 	//method for moving the clicked one
-	public void MoveMarble(float x, float z)
+	public void MoveMarble(Vector3 worldMousePos)
 	{
-		GD.Print("Pos1: " + Position);
-		Position = new Vector3(x, 10f, z); //doesn't work when in motion
-		GD.Print("Pos2: " + Position);
+		Position = worldMousePos; //doesn't work when in motion
 	}	
 }
