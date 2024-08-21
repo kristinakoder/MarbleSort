@@ -1,12 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://bafj17e513s02"]
 
-[ext_resource type="Material" uid="uid://c08iybhn3r18n" path="res://materials/mat0.tres" id="1_rkcdv"]
 [ext_resource type="Script" path="res://scripts/Marble.cs" id="1_xiwjw"]
+[ext_resource type="Material" uid="uid://c08iybhn3r18n" path="res://materials/mat0.tres" id="2_stp30"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_d4jnd"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_4c62i"]
-material = ExtResource("1_rkcdv")
+[sub_resource type="SphereMesh" id="SphereMesh_fnyc0"]
+resource_local_to_scene = true
+material = ExtResource("2_stp30")
 
 [node name="Marble" type="RigidBody3D"]
 gravity_scale = 6.0
@@ -16,4 +17,4 @@ script = ExtResource("1_xiwjw")
 shape = SubResource("SphereShape3D_d4jnd")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("SphereMesh_4c62i")
+mesh = SubResource("SphereMesh_fnyc0")

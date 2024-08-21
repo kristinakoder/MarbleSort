@@ -15,7 +15,7 @@ public partial class InteractScript : Camera3D
 
     public override void _Input(InputEvent @event)
     {
-		if (Input.IsActionJustPressed("leftClick")) //without 'Just' it is when pressed continuously?
+		if (Input.IsActionJustPressed("leftClick"))
 			GetSelection();
 
 		if (isHoldingMarble && Input.IsActionPressed("leftClick"))
@@ -47,13 +47,6 @@ public partial class InteractScript : Camera3D
 	public void MoveMarble()
 	{
 		Vector3 worldMousePos = ProjectPosition(GetViewport().GetMousePosition(), 24);
-		selectedMarble.MoveMarble(worldMousePos); //only happens the moment you click, not when drag, and doesn't go to point clicked.
+		selectedMarble.MoveMarble(worldMousePos);
 	}
 }
-
-/*
-WORKING ON: Making click-and-drag marble work. 
-
-Need to find out how to hold marble when it is in motion
-
-*/

@@ -6,13 +6,13 @@
 [sub_resource type="PrismMesh" id="PrismMesh_i1324"]
 material = ExtResource("2_qx64l")
 left_to_right = 0.0
-size = Vector3(2, 5, 8)
+size = Vector3(2, 3, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fryby"]
-size = Vector3(0.01, 5.355, 8)
+size = Vector3(0.01, 3.525, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tvkay"]
-size = Vector3(0.01, 5, 8)
+size = Vector3(0.01, 3, 8)
 
 [sub_resource type="BoxMesh" id="BoxMesh_i3ntc"]
 material = ExtResource("2_qx64l")
@@ -22,35 +22,35 @@ size = Vector3(8, 0.1, 8)
 size = Vector3(8, 0.01, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t6l5i"]
-size = Vector3(8, 5, 8)
+size = Vector3(8, 3, 8)
 
 [node name="Tub" type="Node3D"]
 script = ExtResource("1_0d5bb")
 
 [node name="Wall0" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.5, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.5, 4)
 mesh = SubResource("PrismMesh_i1324")
 
 [node name="StaticTubWall0" type="StaticBody3D" parent="Wall0"]
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall0/StaticTubWall0"]
-transform = Transform3D(0.927184, -0.374607, 0, 0.374607, 0.927184, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
+transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, -0.0388355, 0.0104468, 0)
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall0/StaticTubWall0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00043, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00798, 0, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Wall1" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 2.5, 1)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 1.5, 1)
 mesh = SubResource("PrismMesh_i1324")
 
 [node name="StaticTubWall1" type="StaticBody3D" parent="Wall1"]
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall1/StaticTubWall1"]
-transform = Transform3D(0.927184, -0.374607, 0, 0.374607, 0.927184, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
+transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall1/StaticTubWall1"]
@@ -58,14 +58,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00043, 0, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Wall2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 2.5, 4)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 1.5, 4)
 mesh = SubResource("PrismMesh_i1324")
 
 [node name="StaticTubWall2" type="StaticBody3D" parent="Wall2"]
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall2/StaticTubWall2"]
-transform = Transform3D(0.927184, -0.374607, 0, 0.374607, 0.927184, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
+transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall2/StaticTubWall2"]
@@ -73,14 +73,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00043, 0, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Wall3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, 4, 2.5, 7)
+transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, 4, 1.5, 7)
 mesh = SubResource("PrismMesh_i1324")
 
 [node name="StaticTubWall3" type="StaticBody3D" parent="Wall3"]
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall3/StaticTubWall3"]
-transform = Transform3D(0.927184, -0.374607, 0, 0.374607, 0.927184, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
+transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, -0.00222719, 0.0104468, 0)
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall3/StaticTubWall3"]
@@ -102,5 +102,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
 input_ray_pickable = false
 
 [node name="CollisionTubArea" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50984, 0)
 shape = SubResource("BoxShape3D_t6l5i")

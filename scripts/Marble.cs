@@ -2,16 +2,19 @@ using Godot;
 using System;
 
 public partial class Marble : RigidBody3D
-{
-	//needs world position, not MousePosition. Get from InteractManager when it calls a method?
-	
-    public override void _IntegrateForces(PhysicsDirectBodyState3D state)
+{	
+	private int ColorId { get; set; }
+    public override void _Ready()
     {
     }
 
-	//method for moving the clicked one
 	public void MoveMarble(Vector3 worldMousePos)
 	{
-		Position = worldMousePos; //doesn't work when in motion
-	}	
+		Position = worldMousePos; 
+	}
+
+	//destroy if it moves off the table. But trigger, not all marbles check if the need to be destroyed all the time
+
+	private Color RandomColor() => new(GetRandom(), GetRandom(), GetRandom());
+	private float GetRandom() => (float) new Random().NextDouble();
 }
