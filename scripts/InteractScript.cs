@@ -33,8 +33,9 @@ public partial class InteractScript : Camera3D
 
 	public void GetSelection()
 	{
+		Vector3 start = ProjectRayOrigin(GetViewport().GetMousePosition());
 		Vector3 end = ProjectPosition(GetViewport().GetMousePosition(), 100);
-		var result = worldSpace.IntersectRay(PhysicsRayQueryParameters3D.Create(Position, end));
+		var result = worldSpace.IntersectRay(PhysicsRayQueryParameters3D.Create(start, end));
 
 		var collider = (Node) result["collider"];
 		if (collider is Marble marble)
@@ -46,7 +47,7 @@ public partial class InteractScript : Camera3D
 
 	public void MoveMarble()
 	{
-		Vector3 worldMousePos = ProjectPosition(GetViewport().GetMousePosition(), 24);
+		Vector3 worldMousePos = ProjectPosition(GetViewport().GetMousePosition(), 26);
 		selectedMarble.MoveMarble(worldMousePos);
 	}
 }

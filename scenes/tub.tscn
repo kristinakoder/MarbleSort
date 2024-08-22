@@ -12,7 +12,7 @@ size = Vector3(2, 3, 8)
 size = Vector3(0.01, 3.525, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tvkay"]
-size = Vector3(0.01, 3, 8)
+size = Vector3(0.01, 3.055, 8.5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_i3ntc"]
 material = ExtResource("2_qx64l")
@@ -28,7 +28,7 @@ size = Vector3(8, 3, 8)
 script = ExtResource("1_0d5bb")
 
 [node name="Wall0" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.5, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.975447, 1.5, 3.9877)
 mesh = SubResource("PrismMesh_i1324")
 
 [node name="StaticTubWall0" type="StaticBody3D" parent="Wall0"]
@@ -39,7 +39,7 @@ transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, 
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall0/StaticTubWall0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00798, 0, 0)
+transform = Transform3D(0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0, 1, -1.25, -0.02, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Wall1" type="MeshInstance3D" parent="."]
@@ -54,7 +54,7 @@ transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, 
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall1/StaticTubWall1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00043, 0, 0)
+transform = Transform3D(0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0, 1, -1.25, -0.02, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Wall2" type="MeshInstance3D" parent="."]
@@ -69,7 +69,7 @@ transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, 
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall2/StaticTubWall2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00043, 0, 0)
+transform = Transform3D(0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0, 1, -1.25, 0, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Wall3" type="MeshInstance3D" parent="."]
@@ -84,7 +84,7 @@ transform = Transform3D(0.833886, -0.551937, 0, 0.551937, 0.833886, 0, 0, 0, 1, 
 shape = SubResource("BoxShape3D_fryby")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall3/StaticTubWall3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00043, 0, 0)
+transform = Transform3D(0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0, 1, -1.25, 0.02, 0)
 shape = SubResource("BoxShape3D_tvkay")
 
 [node name="Bottom" type="MeshInstance3D" parent="."]

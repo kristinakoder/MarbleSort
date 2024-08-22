@@ -10,7 +10,9 @@ resource_local_to_scene = true
 material = ExtResource("2_stp30")
 
 [node name="Marble" type="RigidBody3D"]
-gravity_scale = 6.0
+disable_mode = 2
+gravity_scale = 10.0
+can_sleep = false
 script = ExtResource("1_xiwjw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
