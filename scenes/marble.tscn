@@ -8,11 +8,12 @@
 [sub_resource type="SphereMesh" id="SphereMesh_fnyc0"]
 resource_local_to_scene = true
 material = ExtResource("2_stp30")
+radial_segments = 8
+rings = 4
 
 [node name="Marble" type="RigidBody3D"]
 disable_mode = 2
 gravity_scale = 10.0
-can_sleep = false
 script = ExtResource("1_xiwjw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

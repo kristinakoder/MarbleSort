@@ -7,10 +7,13 @@ public partial class InteractScript : Camera3D
 	private Marble selectedMarble;
 	PhysicsDirectSpaceState3D worldSpace;
 
+	private Vector2 windowSize;
+
     public override void _Ready()
     {
-        base._Ready();
+		windowSize = DisplayServer.WindowGetSize();
 		worldSpace = GetWorld3D().DirectSpaceState;
+		var vp = GetViewport().GetVisibleRect();
     }
 
     public override void _Input(InputEvent @event)

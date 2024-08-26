@@ -13,16 +13,20 @@ config_version=5
 config/name="MarbleSort"
 run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
-config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=720
-window/size/viewport_height=1280
+window/size/viewport_width=540
+window/size/viewport_height=1110
+window/handheld/orientation=1
 
 [dotnet]
 
 project/assembly_name="MarbleSort"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 
