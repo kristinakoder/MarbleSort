@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cwhfx1sar3h2j"]
+[gd_scene load_steps=14 format=3 uid="uid://cwhfx1sar3h2j"]
 
 [ext_resource type="Script" path="res://scripts/Spawner.cs" id="1_u1gt1"]
 [ext_resource type="Texture2D" uid="uid://s5oixqrer6f8" path="res://textures/Wood049_1K-PNG/Wood049_1K-PNG_Color.png" id="2_cmait"]
 [ext_resource type="PackedScene" uid="uid://0pmnfywxhe02" path="res://scenes/tub.tscn" id="2_umqp4"]
 [ext_resource type="Script" path="res://scripts/InteractScript.cs" id="3_6v7nn"]
 [ext_resource type="Texture2D" uid="uid://d1mwvrba3rtp2" path="res://textures/Wood049_1K-PNG/Wood049_1K-PNG_Roughness.png" id="3_kkfqm"]
+[ext_resource type="PackedScene" uid="uid://bosp8ltttvomx" path="res://scenes/ui.tscn" id="5_n2dyc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p02l7"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -33,6 +34,8 @@ size = Vector3(22.5, 1, 46.25)
 size = Vector3(0.01, 70, 70)
 
 [node name="World" type="Node3D"]
+
+[node name="ui" parent="." instance=ExtResource("5_n2dyc")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_814va")
