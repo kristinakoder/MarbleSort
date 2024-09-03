@@ -66,11 +66,6 @@ public partial class Spawner : Node3D
 
 	private float GetRandom() => (float) new Random().NextDouble();
 
-	private float GetRandom(int min, int max)
-	{
-		return GetRandom();
-	}
-
 	private float RandomCoordinate() => (GetRandom() - 0.5f) * 20;
 
 	private Vector3 RandomPosition() => new Vector3(RandomCoordinate(), 7, RandomCoordinate() * 2);
